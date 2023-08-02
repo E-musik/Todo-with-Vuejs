@@ -13,7 +13,7 @@ const todolist = ref ([''])
     placeholder="what todo">
     <button class="add" @click="todolist.push(home)">Add todo</button>
     <ol>
-      <li v-for="items of todolist">{{ items }}</li>
+      <li v-for="items of todolist">{{'I want to:' + items }}</li>
     </ol>
   </div>
 
